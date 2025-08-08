@@ -1,6 +1,6 @@
 /* Notion Calendar Restyle - add your overrides below */
 
-div[data-event-chip-key] {
+div[data-event-chip-key]:not(:has(.jfSVGI)) {
 	filter: saturate(2.6) brightness(0.9) contrast(1.05) hue-rotate(-5deg);
 
 	color: #000 !important;
