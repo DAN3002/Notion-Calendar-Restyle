@@ -1,0 +1,21 @@
+{
+	"manifest_version": 3,
+	"name": "Notion Calendar Restyle",
+	"version": "0.1.0",
+	"description": "Injects custom CSS into Notion Calendar pages.",
+	"content_scripts": [
+		{
+			"matches": [
+				"https://calendar.notion.so/*",
+				"https://calendar.notion.com/*"
+			],
+			"js": [
+				"content.js"
+			],
+			"css": [
+				"styles.css"
+			],
+			"run_at": "document_end"
+		}
+	]
+} 
