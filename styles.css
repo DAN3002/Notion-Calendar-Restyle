@@ -9,8 +9,41 @@ div[data-event-chip-key]:not(:has(.jfSVGI)) {
 }
 
 /* Map specific inline background colors to desired tones */
-
 div[data-event-chip-key] * {
 	color: #000 !important;
 	text-decoration-color: #000 !important;
+}
+
+/* Strike-through for Done tasks (has check icon .joxxbw) */
+div[data-event-chip-key]:has(.joxxbw) .gTysTW {
+	text-decoration-line: line-through !important;
+}
+
+/* Beautify Doing tasks (has in-progress icon .kdprgt) */
+div[data-event-chip-key]:has(.kdprgt) {
+	--background-color: #e6f0ff !important;
+	--foreground-color-primary: #2b6cb0 !important;
+	--foreground-color-secondary: #4299e1 !important;
+	--ribbon-color-primary: #bee3f8 !important;
+	--ribbon-color-secondary: #90cdf4 !important;
+	--border-color: rgba(43, 108, 176, 0.35) !important;
+	box-shadow: 0 0 0 1px var(--border-color), 0 2px 6px rgba(43, 108, 176, 0.15) !important;
+	border-radius: 10px !important;
+	backdrop-filter: saturate(1.1) !important;
+}
+
+div[data-event-chip-key]:has(.kdprgt) .gTysTW,
+div[data-event-chip-key]:has(.kdprgt) .gTysTW * {
+	color: #1a365d !important;
+	text-decoration-color: #1a365d !important;
+	font-weight: 600;
+}
+
+div[data-event-chip-key]:has(.kdprgt) .kdprgt {
+	color: #2b6cb0 !important;
+}
+
+div[data-event-chip-key]:has(.kdprgt) .hEiRZj {
+	color: #2b6cb0 !important;
+	font-weight: 500;
 }
