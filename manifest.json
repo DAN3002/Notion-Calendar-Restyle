@@ -10,10 +10,10 @@
 				"https://calendar.notion.com/*"
 			],
 			"js": [
-				"content.js"
+				"./scripts/content/content.js"
 			],
 			"css": [
-				"styles.css"
+				"./styles/styles.css"
 			],
 			"run_at": "document_end"
 		}
