@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Notion Calendar Restyle",
 	"version": "0.1.0",
-	"description": "Clean, consistent restyling for Notion Calendar via injected CSS. Enhances spacing, typography, and subtle visuals without changing functionality.",
+	"description": "A lightweight Chrome extension that injects CSS to make Notion Calendar cleaner and more consistent, inspired by Google Calendar’s visual cues.",
 	"icons": {
 		"16": "icons/icon.png",
 		"32": "icons/icon.png",
