@@ -47,5 +47,5 @@ div[data-event-chip-key]:is(
 	[style*="228, 219, 221"], [style*="228,219,221"],
 	[style*="246, 217, 156"], [style*="246,217,156"]
 ) {
-	opacity: 0.7 !important;
+	opacity: 0.6 !important;
 }
