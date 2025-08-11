@@ -12,7 +12,7 @@ div[data-event-chip-key]:not(:has(.jfSVGI)):not(:is(
 	[style*="226, 219, 232"], [style*="226,219,232"],
 	[style*="243, 216, 192"], [style*="243,216,192"],
 	[style*="228, 219, 221"], [style*="228,219,221"],
-	[style*="246, 217, 156"], [style*="246,217,156"]
+	/* [style*="246, 217, 156"], [style*="246,217,156"] */
 )) {
 	/* filter: saturate(2.6) brightness(0.9) contrast(1.05) hue-rotate(-5deg); */
 	--background-color: var(--ribbon-color-primary) !important;
@@ -26,7 +26,20 @@ div[data-event-chip-key] * {
 	text-decoration-color: #000 !important;
 }
 
+/* To do tasks */
+div[data-event-chip-key]:has(.jfSVGI) {
+	--background-color: rgb(255,241,191) !important;
+	--ribbon-color-primary: var(--background-color) !important;
+	--ribbon-color-secondary: var(--background-color) !important;
+}
+
 /* Done tasks */
+
+div[data-event-chip-key]:has(svg path[clip-rule="evenodd"]) {
+	--background-color: rgb(254,250,239) !important;
+	--ribbon-color-primary: rgb(254,250,239) !important;
+	--ribbon-color-secondary: rgb(254,250,239) !important;
+}
 
 div[data-event-chip-key]:has(svg path[clip-rule="evenodd"]) .gTysTW {
 	text-decoration: line-through !important;
@@ -56,7 +69,7 @@ div[data-event-chip-key]:is(
 	[style*="226, 219, 232"], [style*="226,219,232"],
 	[style*="243, 216, 192"], [style*="243,216,192"],
 	[style*="228, 219, 221"], [style*="228,219,221"],
-	[style*="246, 217, 156"], [style*="246,217,156"]
+	/* [style*="246, 217, 156"], [style*="246,217,156"] */
 ) {
 	--ribbon-color-primary: var(--background-color) !important;
 }
