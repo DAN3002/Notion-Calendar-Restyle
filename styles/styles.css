@@ -2,7 +2,18 @@
 
 /* Set background color for all events to ribbon color */
 
-div[data-event-chip-key]:not(:has(.jfSVGI)) {
+div[data-event-chip-key]:not(:has(.jfSVGI)):not(:is(
+	[style*="211, 226, 218"], [style*="211,226,218"],
+	[style*="215, 223, 231"], [style*="215,223,231"],
+	[style*="246, 213, 198"], [style*="246,213,198"],
+	[style*="237, 215, 218"], [style*="237,215,218"],
+	[style*="238, 216, 213"], [style*="238,216,213"],
+	[style*="205, 227, 229"], [style*="205,227,229"],
+	[style*="226, 219, 232"], [style*="226,219,232"],
+	[style*="243, 216, 192"], [style*="243,216,192"],
+	[style*="228, 219, 221"], [style*="228,219,221"],
+	[style*="246, 217, 156"], [style*="246,217,156"]
+)) {
 	/* filter: saturate(2.6) brightness(0.9) contrast(1.05) hue-rotate(-5deg); */
 	--background-color: var(--ribbon-color-primary) !important;
 
@@ -47,5 +58,5 @@ div[data-event-chip-key]:is(
 	[style*="228, 219, 221"], [style*="228,219,221"],
 	[style*="246, 217, 156"], [style*="246,217,156"]
 ) {
-	opacity: 0.6 !important;
+	--ribbon-color-primary: var(--background-color) !important;
 }
